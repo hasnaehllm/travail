@@ -1,0 +1,15 @@
+C:\Users\Hasnae\Desktop\Travail\Travail\bin\Debug\Travail.exe.config
+C:\Users\Hasnae\Desktop\Travail\Travail\bin\Debug\Travail.exe
+C:\Users\Hasnae\Desktop\Travail\Travail\bin\Debug\Travail.pdb
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.csproj.AssemblyReference.cache
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\MainWindow.g.cs
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\App.g.cs
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail_MarkupCompile.cache
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\MainWindow.baml
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.g.resources
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.Properties.Resources.resources
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.csproj.GenerateResource.cache
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.csproj.CoreCompileInputs.cache
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.exe
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.pdb
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.exe.config
