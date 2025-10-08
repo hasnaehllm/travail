@@ -1,29 +1,49 @@
-﻿<Window x:Class="Travail.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Envoi d'Email" Height="450" Width="638">
-    <Grid Margin="154,10,154,30">
-        <TextBlock Text="Adresse e-mail de l'utilisateur" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,0,0"/>
-        <TextBox x:Name="UserEmailTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,25,0,0"/>
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="Travail.MainWindow"
+    Title="Envoi d'Email" Height="450" Width="638">
 
-        <TextBlock Text="Mot de passe" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,50,0,0"/>
-        <PasswordBox x:Name="UserPasswordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,72,0,0"/>
+    <Grid Margin="85,10,154,30">
 
-        <TextBlock Text="Adresse e-mail du destinataire" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,108,0,0"/>
-        <TextBox x:Name="RecipientEmailTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,135,0,0"/>
+        <!-- Menu en haut de la fenêtre -->
+        <Menu VerticalAlignment="Top" Height="24" Margin="0,2,0,0">
+            <!-- Changez le texte ici de "Options" à "Menu" -->
+            <MenuItem Header="Menu" Height="19">
+                <MenuItem Header="To-Do List" Click="OpenToDoList_Click"/>
+            </MenuItem>
+        </Menu>
 
-        <TextBlock Text="Objet" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,161,0,0"/>
-        <TextBox x:Name="SubjectTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,187,0,0"/>
+        <!-- TextBox pour l'email de l'utilisateur -->
+        <TextBlock Text="Adresse e-mail de l'utilisateur" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,31,0,0"/>
+        <TextBox x:Name="UserEmailTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,52,0,0"/>
 
-        <TextBlock Text="Message" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,221,0,0"/>
+        <!-- Champ pour le mot de passe -->
+        <TextBlock Text="Mot de passe" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,76,0,0"/>
+        <PasswordBox x:Name="UserPasswordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,95,0,0"/>
+
+        <!-- Champs pour l'adresse e-mail du destinataire -->
+        <TextBlock Text="Adresse e-mail du destinataire" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,123,0,0"/>
+        <TextBox x:Name="RecipientEmailTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,146,0,0"/>
+
+        <!-- Champs pour l'objet de l'email -->
+        <TextBlock Text="Objet" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,175,0,0"/>
+        <TextBox x:Name="SubjectTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,197,0,0"/>
+
+        <!-- Champs pour le message -->
+        <TextBlock Text="Message" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,227,0,0"/>
         <TextBox x:Name="MessageTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="100" Margin="10,247,0,0" VerticalScrollBarVisibility="Auto"/>
 
+        <!-- Affichage des erreurs -->
         <TextBlock x:Name="ErrorMessageTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,380,0,0" Foreground="Red"/>
 
-        <Button x:Name="SendButton" Content="Envoyer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="98,351,0,0" Click="SendEmailButton_Click"/>
+        <!-- Bouton d'envoi de l'email -->
+        <Button x:Name="SendButton" Content="Envoyer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="115,351,0,0" Click="SendEmailButton_Click"/>
 
+        <!-- Affichage de l'état de l'envoi -->
         <TextBlock x:Name="StatusTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="10,410,0,0" Foreground="Green"/>
 
+        <!-- Barre de progression -->
         <ProgressBar x:Name="ProgressBar" Width="160" Height="16" IsIndeterminate="True" Visibility="Collapsed"/>
     </Grid>
 </Window>

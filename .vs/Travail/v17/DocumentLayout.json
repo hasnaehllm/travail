@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Hasnae\\Desktop\\Travail\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A199B74B-0DEF-4F44-93B2-923BC1C37B28}|Travail\\Travail.csproj|C:\\Users\\Hasnae\\Desktop\\Travail\\travail\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A199B74B-0DEF-4F44-93B2-923BC1C37B28}|Travail\\Travail.csproj|C:\\Users\\Hasnae\\Desktop\\Travail\\travail\\todolistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A199B74B-0DEF-4F44-93B2-923BC1C37B28}|Travail\\Travail.csproj|solutionrelative:travail\\todolistwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A199B74B-0DEF-4F44-93B2-923BC1C37B28}|Travail\\Travail.csproj|c:\\users\\hasnae\\desktop\\travail\\travail\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A199B74B-0DEF-4F44-93B2-923BC1C37B28}|Travail\\Travail.csproj|solutionrelative:travail\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A199B74B-0DEF-4F44-93B2-923BC1C37B28}|Travail\\Travail.csproj|c:\\users\\hasnae\\desktop\\travail\\travail\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A199B74B-0DEF-4F44-93B2-923BC1C37B28}|Travail\\Travail.csproj|C:\\Users\\Hasnae\\Desktop\\Travail\\travail\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A199B74B-0DEF-4F44-93B2-923BC1C37B28}|Travail\\Travail.csproj|solutionrelative:travail\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A199B74B-0DEF-4F44-93B2-923BC1C37B28}|Travail\\Travail.csproj|C:\\Users\\Hasnae\\Desktop\\Travail\\travail\\todolistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A199B74B-0DEF-4F44-93B2-923BC1C37B28}|Travail\\Travail.csproj|solutionrelative:travail\\todolistwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Travail||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -21,26 +29,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Travail",
-              "DocumentMoniker": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\Travail.csproj",
-              "RelativeDocumentMoniker": "Travail\\Travail.csproj",
-              "ToolTip": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\Travail.csproj",
-              "RelativeToolTip": "Travail\\Travail.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-07T20:38:46.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Travail\\MainWindow.xaml",
@@ -51,21 +52,51 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ToDoListWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\ToDoListWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Travail\\ToDoListWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\ToDoListWindow.xaml.cs",
+              "RelativeToolTip": "Travail\\ToDoListWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T09:02:02.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ToDoListWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\ToDoListWindow.xaml",
+              "RelativeDocumentMoniker": "Travail\\ToDoListWindow.xaml",
+              "ToolTip": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\ToDoListWindow.xaml",
+              "RelativeToolTip": "Travail\\ToDoListWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-08T09:00:57.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Travail",
+              "DocumentMoniker": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\Travail.csproj",
+              "RelativeDocumentMoniker": "Travail\\Travail.csproj",
+              "ToolTip": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\Travail.csproj",
+              "RelativeToolTip": "Travail\\Travail.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-07T20:38:46.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Travail\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Hasnae\\Desktop\\Travail\\Travail\\MainWindow.xaml.cs",
               "RelativeToolTip": "Travail\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAiwFEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T20:43:09.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T20:43:09.734Z"
             }
           ]
         }

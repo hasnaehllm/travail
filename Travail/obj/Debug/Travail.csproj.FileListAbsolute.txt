@@ -13,3 +13,7 @@ C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.csproj.CoreCompileInpu
 C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.exe
 C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.pdb
 C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail.exe.config
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\ToDoListWindow.g.cs
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail_MarkupCompile.lref
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\ToDoListWindow.baml

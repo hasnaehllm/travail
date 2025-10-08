@@ -4,6 +4,7 @@ using System.Net.Mail;
 using System.Windows;
 using System.ComponentModel;
 
+
 namespace Travail
 {
     public partial class MainWindow : Window
@@ -11,6 +12,12 @@ namespace Travail
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void OpenToDoList_Click(object sender, RoutedEventArgs e)
+        {
+            ToDoListWindow toDoListWindow = new ToDoListWindow();
+            toDoListWindow.Show(); 
         }
 
         private void SendEmailButton_Click(object sender, RoutedEventArgs e)
@@ -28,12 +35,10 @@ namespace Travail
                 return;
             }
 
-            // Masquer les anciens messages d'erreur
             ErrorMessageTextBlock.Text = "";
             StatusTextBlock.Text = "Envoi en cours...";
             ProgressBar.Visibility = Visibility.Visible;
 
-            // Créer un BackgroundWorker pour envoyer l'email en arrière-plan
             BackgroundWorker worker = new BackgroundWorker();
             worker.DoWork += (s, args) =>
             {
@@ -54,19 +59,21 @@ namespace Travail
                     };
                     mailMessage.To.Add(recipientEmail);
 
-                    // Envoi de l'email
                     client.Send(mailMessage);
                     args.Result = "Email envoyé avec succès!";
                 }
+                catch (SmtpException smtpEx)
+                {
+                    args.Result = $"Erreur SMTP : {smtpEx.Message}";
+                }
                 catch (Exception ex)
                 {
-                    args.Result = $"Erreur : {ex.Message}"; 
+                    args.Result = $"Erreur générale : {ex.Message}";
                 }
             };
 
             worker.RunWorkerCompleted += (s, args) =>
             {
-                // Mettre à jour l'interface avec le message de succès ou d'erreur
                 StatusTextBlock.Text = "";
                 ErrorMessageTextBlock.Text = args.Result.ToString();
 
