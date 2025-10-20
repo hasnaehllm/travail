@@ -55,9 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ChronometerViewModel.cs" />
+    <Compile Include="ChronometreModel.cs" />
+    <Compile Include="ChronometreView.xaml.cs">
+      <DependentUpon>ChronometreView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RelayCommand.cs" />
     <Compile Include="ToDoListWindow.xaml.cs">
       <DependentUpon>ToDoListWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="ChronometreView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

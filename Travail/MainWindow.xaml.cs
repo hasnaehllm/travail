@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Windows;
 using System.ComponentModel;
-
+using Travail;
 
 namespace Travail
 {
@@ -17,8 +17,19 @@ namespace Travail
         private void OpenToDoList_Click(object sender, RoutedEventArgs e)
         {
             ToDoListWindow toDoListWindow = new ToDoListWindow();
-            toDoListWindow.Show(); 
+            toDoListWindow.Show();
         }
+
+        private void OpenChronometer_Click(object sender, RoutedEventArgs e)
+        {
+            Window chronometreWindow = new Window
+            {
+                Content = new ChronometreView()  
+            };
+
+            chronometreWindow.Show();
+        }
+
 
         private void SendEmailButton_Click(object sender, RoutedEventArgs e)
         {

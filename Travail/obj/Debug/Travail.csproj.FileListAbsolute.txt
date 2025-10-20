@@ -17,3 +17,5 @@ C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\ToDoListWindow.g.cs
 C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\Travail_MarkupCompile.lref
 C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\ToDoListWindow.baml
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\ChronometreView.g.cs
+C:\Users\Hasnae\Desktop\Travail\Travail\obj\Debug\ChronometreView.baml
