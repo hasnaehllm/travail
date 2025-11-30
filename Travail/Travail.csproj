@@ -60,11 +60,18 @@
     <Compile Include="ChronometreView.xaml.cs">
       <DependentUpon>ChronometreView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CommunicationRéseau.xaml.cs">
+      <DependentUpon>CommunicationRéseau.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RelayCommand.cs" />
     <Compile Include="ToDoListWindow.xaml.cs">
       <DependentUpon>ToDoListWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="ChronometreView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommunicationRéseau.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

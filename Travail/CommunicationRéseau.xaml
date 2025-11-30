@@ -1,0 +1,92 @@
+﻿<Window x:Class="Travail.CommunicationRéseau"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Travail"
+        mc:Ignorable="d"
+        Title="CommunicationRéseau" Height="675" Width="875"
+        Background="#F4F7F6">
+
+    <Window.Resources>
+        <Style x:Key="ModernTextBox" TargetType="TextBox">
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="#B0B0B0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <!-- Style pour les TextBlock -->
+        <Style x:Key="ModernTextBlock" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#333"/>
+            <Setter Property="Margin" Value="0,15,0,5"/>
+        </Style>
+
+        <!-- Style pour les Boutons -->
+        <Style x:Key="ModernButton" TargetType="Button">
+            <Setter Property="Background" Value="#4CAF50"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderBrush" Value="#388E3C"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Menu VerticalAlignment="Top" Background="#000000" Foreground="White" Height="40">
+            <MenuItem Header="Communication" Background="#000000" Foreground="White">
+                <MenuItem Header="Listener/Client" Background="#000000" Foreground="White">
+                    <MenuItem Header="Ecouter" Click="ListenerClientEcouter_Click" Background="#000000" Foreground="White"/>
+                    <MenuItem Header="Connecter" Click="ListenerClientConnecter_Click" Background="#000000" Foreground="White"/>
+                </MenuItem>
+                <MenuItem Header="UDP" Background="#000000" Foreground="White">
+                    <MenuItem Header="Ecouter" Click="UdpEcouter_Click" Background="#000000" Foreground="White"/>
+                    <MenuItem Header="Connecter" Click="UdpConnecter_Click" Background="#000000" Foreground="White"/>
+                </MenuItem>
+                <MenuItem Header="Socket" Background="#000000" Foreground="White">
+                    <MenuItem Header="Ecouter" Click="SocketEcouter_Click" Background="#000000" Foreground="White"/>
+                    <MenuItem Header="Connecter" Click="SocketConnecter_Click" Background="#000000" Foreground="White"/>
+                    <MenuItem Header="Déconnecter" Click="SocketDeconnecter_Click" Background="#000000" Foreground="White"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Utilitaire" Background="#000000" Foreground="White">
+                <MenuItem Header="Vérifier" Click="Verifier_Click" Background="#000000" Foreground="White"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Contenu principal -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Width="500" Margin="0,70,0,0">
+            <!-- Serveur -->
+            <TextBlock Style="{StaticResource ModernTextBlock}" Text="Serveur"/>
+            <TextBox Style="{StaticResource ModernTextBox}" Name="ServeurTextBox" Width="400"/>
+
+            <!-- IP -->
+            <TextBlock Style="{StaticResource ModernTextBlock}" Text="IP"/>
+            <TextBox Style="{StaticResource ModernTextBox}" Name="IpTextBox" IsReadOnly="True" Width="400"/>
+
+            <!-- Message -->
+            <TextBlock Style="{StaticResource ModernTextBlock}" Text="Message"/>
+            <TextBox Style="{StaticResource ModernTextBox}" Name="MessageTextBox" Width="400"/>
+
+            <!-- Bouton Envoyer -->
+            <Button Style="{StaticResource ModernButton}" Content="Envoyer" Click="Envoyer_Click" Width="400" HorizontalAlignment="Center"/>
+
+            <!-- Echanges -->
+            <TextBlock Style="{StaticResource ModernTextBlock}" Text="Echanges"/>
+            <TextBox Style="{StaticResource ModernTextBox}" Name="EchangesTextBox" IsReadOnly="True" Height="100" Width="400"/>
+        </StackPanel>
+    </Grid>
+</Window>

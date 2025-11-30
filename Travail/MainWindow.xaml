@@ -18,6 +18,9 @@
                 <MenuItem Header="To-Do List" Click="OpenToDoList_Click"/>
                 <!-- Ajoutez cette ligne pour ouvrir le Chronomètre -->
                 <MenuItem Header="Chronomètre" Click="OpenChronometer_Click"/>
+                <MenuItem Header="CommunicationRéseau" Click="OpenCommunicationRéseau_Click"/>
+
+
             </MenuItem>
         </Menu>
 

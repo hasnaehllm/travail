@@ -30,6 +30,14 @@ namespace Travail
             chronometreWindow.Show();
         }
 
+        private void OpenCommunicationRéseau_Click(object sender, RoutedEventArgs e)
+        {
+            CommunicationRéseau communicationWindow = new CommunicationRéseau();  // Le nom de la classe avec un underscore
+            communicationWindow.Show();
+        }
+
+      
+
 
         private void SendEmailButton_Click(object sender, RoutedEventArgs e)
         {
